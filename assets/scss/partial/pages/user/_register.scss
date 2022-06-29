@@ -1,0 +1,36 @@
+#user-register {
+ .user-register-enter{
+    padding: 80px 0;
+    a {
+      text-decoration: none;
+    }
+    .register-button{
+        @include primary-font();
+        @extend %primary-btn;
+    }
+    .upload-image {
+      text-align: center;
+      align-items: center;
+
+      .upload-icon {
+        font-size: 24px;
+        color: $main-bg-color-dark;
+        cursor: pointer;
+        transition: .5s;
+        span {
+          font-size: 16px;
+        }
+        &:hover {
+          color: rgb(17, 182, 17);
+          span {
+            color: rgb(17, 182, 17);
+          }
+        }
+      }
+
+      .upload-btn {
+        display: none;
+      }
+    }
+ }
+}

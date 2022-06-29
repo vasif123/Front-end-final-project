@@ -1,0 +1,150 @@
+.bottom-header {
+  padding: 80px 0;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+    background-color: #f5f5f579;
+    left: 0;
+    top: 0;
+    transform: translate(-15%, -15%);
+    z-index: -1;
+  }
+  .container {
+    .row {
+      .left-side {
+        padding: 0 10px;
+        .context {
+          padding: 0 20px;
+          h1 {
+            @include primary-font($font-size: 28px);
+            color: $main-color-dark;
+            line-height: 45px;
+            padding-bottom: 20px;
+            span {
+              color: $main-bg-color-dark;
+            }
+          }
+          p {
+            color: $main-color-dark;
+            @include primary-font();
+            padding-bottom: 20px;
+          }
+          a {
+            @extend %primary-btn;
+          }
+        }
+      }
+      .right-side {
+        height: 500px;
+        padding: 0 10px;
+        .card-1 {
+          .image-1 {
+            height: 55%;
+            border-radius: 5px;
+            overflow: hidden;
+            img {
+              object-fit: cover;
+              width: 221px;
+              height: 100%;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .image-2 {
+            height: 45%;
+            overflow: hidden;
+            position: relative;
+            img {
+              object-fit: cover;
+              width: 221px;
+              height: 100%;
+              border-radius: 5px;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            .play-btn {
+              cursor: pointer;
+              position: absolute;
+              border: 1px solid $main-bg-color-light;
+              width: 65px;
+              height: 65px;
+              background-color: $main-bg-color-light;
+              opacity: 0.6;
+              border-radius: 100%;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 0;
+              i {
+                color: $main-bg-color-dark;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+              }
+            }
+          }
+        }
+        .card-2 {
+          .image-3 {
+            height: 45%;
+            overflow: hidden;
+            img {
+              object-fit: cover;
+              width: 221px;
+              height: 100%;
+              border-radius: 5px;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .image-4 {
+            height: 55%;
+            overflow: hidden;
+            position: relative;
+            .context {
+              padding: 0 10px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              background-color: #585de9d2;
+              z-index: 0;
+              h6 {
+                color: $main-color-light;
+                z-index: 1;
+              }
+              p {
+                color: $main-color-light;
+                z-index: 1;
+              }
+            }
+            img {
+              object-fit: cover;
+              width: 221px;
+              height: 100%;
+              border-radius: 5px;
+              transition: 0.5s;
+            }
+            &:hover {
+              img{
+              transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+#pricing-plans {
+	background: #f7fafd;
+	padding: 80px 0;
+	scroll-behavior: smooth;
+	.container {
+		.row {
+			.pricing-plan-title {
+				text-align: center;
+				padding-bottom: 30px;
+				h2 {
+					color: #3b566e;
+					font-size: 28px;
+					font-weight: 400;
+					letter-spacing: 1px;
+					padding-bottom: 15px;
+				}
+				p {
+					color: #6f8ba4;
+					font-size: 16px;
+					font-weight: 400;
+					max-width: 500px;
+				}
+			}
+			.pricing-card {
+				border-radius: 5px;
+				box-shadow: $main-box-shadow;
+				padding: 10px;
+				transition: 0.5s;
+				.top-title {
+					padding-top: 25px;
+					h4 {
+						color: $main-color-dark;
+						@include primary-font($font-weight:700);
+					}
+				}
+				.count {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background: $main-color-light;
+					text-align: center;
+					position: relative;
+					span {
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						position: absolute;
+						color: $main-bg-color-dark;
+						font-size: 18px;
+					}
+				}
+				.price {
+					h2 {
+						color: #585ce9;
+						@include primary-font($font-size:34px,$font-weight:700);
+						span {
+							@include primary-font($font-size:15px,$font-weight:500);
+						}
+					}
+				}
+				.plans {
+					text-align: center;
+					h6 {
+						@include primary-font($font-size:14px);
+						color: $main-color-dark;
+						line-height: 20px;
+						&.strikeout {
+							text-decoration: line-through;
+							opacity: 0.5;
+						}
+					}
+				}
+				.pricing-btn {
+					padding-bottom: 25px;
+					a {
+						@extend %primary-btn;
+					}
+				}
+				&.middle-card {
+					z-index: 1;
+					position: relative;
+					&:after {
+						content: '';
+						position: absolute;
+						background-color: #585de9;
+						height: 100px;
+						top: 0;
+						left: 0;
+						right: 0;
+						z-index: -1;
+					}
+					.top-title {
+						h4 {
+							color: $main-color-light;
+						}
+					}
+				}
+			}
+		}
+	}
+}

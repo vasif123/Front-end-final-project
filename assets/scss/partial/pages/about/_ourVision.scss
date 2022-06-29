@@ -1,0 +1,45 @@
+#our-vision {
+    padding: 80px 0;
+  background-color: $main-bg-color-light;
+  .container {
+    .row {
+    .our-vision-context{
+        position: relative;
+        .our-right-side {
+            overflow: hidden;
+            z-index: 0;
+            img {
+                transition: .5s all;
+                border-radius: 5px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+          }
+          .our-left-side {
+              position: absolute;
+              top: 50%;
+              left: 25%;
+              transform: translate(-50%,-50%);
+              border-radius: 5px;
+            min-height: 380px;
+            width: 450px;
+            z-index: 1;
+    
+            background-color: $main-color-light;
+            h4 {
+                @include primary-font($font-size:24px);
+                padding: 15px 20px 0 20px;
+                color: $main-color-dark;
+            }
+            p {
+                @include primary-font($font-size:14px,$l-spacing:.5px);
+                padding: 10px 20px;
+                color: $secondary-color-dark;
+                line-height: 30px;
+            }
+          }
+    }
+    }
+  }
+}

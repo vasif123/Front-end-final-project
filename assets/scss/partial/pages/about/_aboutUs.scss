@@ -1,0 +1,52 @@
+#about-us {
+    background-color: $main-bg-color-light;
+	padding: 80px 0;
+  background-image: url("../images/2.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  position: relative;
+  &:after {
+    content: "";
+    background-color: #585de9a9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  .container {
+    .row {
+      .about-us-context {
+        z-index: 1;
+        h1 {
+			@include primary-font($font-size:32px);
+          color: $main-bg-color-light;
+          position: relative;
+          &::after {
+            content: "";
+            width: 20px;
+            position: absolute;
+            border: 1px solid $main-color-light;
+            left: 50%;
+            top: 120%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        a {
+          padding-top: 20px;
+          color: $main-bg-color-light;
+          text-decoration: none;
+          display: inline-block;
+        }
+        span {
+          color: $main-bg-color-light;
+        }
+      }
+    }
+  }
+}

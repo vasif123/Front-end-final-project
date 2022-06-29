@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+.navbar .container .login > ul li a.sign-up, .navbar .container .login > ul li a.sign-in, .menu-responsive .container .login > ul li a.sign-up, .menu-responsive .container .login > ul li a.sign-in, .bottom-header .container .row .left-side .context a, #pricing-plans .container .row .pricing-card .pricing-btn a, #parallax-text .row .parallax-context a, #blog-posts .container .row .blog-card .blog-btn a, #questions .container .row .left-side .context a, #message-us .container .row .right-side-inputs .send-btn a, #blog-cards .container .row .blog-card .blog-btn a, #blog-cards .container .row .blog-side-image .context .contact-us-btn a, #blog-cards .container .row .submit-comment .send-btn a, #user-login .user-login-enter .login-button, #user-register .user-register-enter .register-button, #solution .container .row .blog-side-image .context .contact-us-btn a {
+  text-decoration: none;
+  border: 1px solid #585ce9;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #585ce9;
+}
+
+.navbar .container .login > ul li a.sign-up:hover, .navbar .container .login > ul li a.sign-in:hover, .menu-responsive .container .login > ul li a.sign-up:hover, .menu-responsive .container .login > ul li a.sign-in:hover, .bottom-header .container .row .left-side .context a:hover, #pricing-plans .container .row .pricing-card .pricing-btn a:hover, #parallax-text .row .parallax-context a:hover, #blog-posts .container .row .blog-card .blog-btn a:hover, #questions .container .row .left-side .context a:hover, #message-us .container .row .right-side-inputs .send-btn a:hover, #blog-cards .container .row .blog-card .blog-btn a:hover, #blog-cards .container .row .blog-side-image .context .contact-us-btn a:hover, #blog-cards .container .row .submit-comment .send-btn a:hover, #user-login .user-login-enter .login-button:hover, #user-register .user-register-enter .register-button:hover, #solution .container .row .blog-side-image .context .contact-us-btn a:hover {
+  background-color: #3138ff;
+}
+
+#message-us .container .row .right-side-inputs .name-email .name-surname-input, #message-us .container .row .right-side-inputs .name-email .email-input, #blog-cards .container .row .blog-search .input-search, #blog-cards .container .row .submit-comment .name-email .input-info, #blog-cards .container .row .submit-comment .your-comment textarea {
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.089);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.089);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.navbar {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  z-index: 999999999999999;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.navbar .container .menu-icon {
+  display: none;
+}
+
+.navbar .container .logo {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .container .menu > ul {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.navbar .container .menu > ul li {
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.navbar .container .menu > ul li:hover ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.navbar .container .menu > ul li ul {
+  z-index: 0;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: 200px;
+  height: auto;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  visibility: hidden;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.089);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.089);
+}
+
+.navbar .container .menu > ul li ul li {
+  margin: 0;
+  padding: 8px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .container .menu > ul li ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #585ce9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .container .menu > ul li ul li:hover {
+  background: #f5f5f5;
+  padding-left: 25px;
+}
+
+.navbar .container .menu > ul li ul li:hover::before {
+  width: 3px;
+}
+
+.navbar .container .menu > ul li ul li a {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 300;
+  color: #3b566e;
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar .container .menu > ul li i {
+  margin-left: 5px;
+  font-size: 8px;
+  color: #3b566e;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar .container .menu > ul li a {
+  text-transform: capitalize;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: #3b566ea9;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar .container .login {
+  padding: 0;
+}
+
+.navbar .container .login > ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .container .login > ul li {
+  cursor: pointer;
+}
+
+.navbar .container .login > ul li a {
+  text-transform: capitalize;
+}
+
+.navbar .container .login > ul li a.sign-out {
+  text-decoration: none;
+  padding: 0 15px;
+  font-family: "Nunito", sans-serif;
+  color: red;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar .container .login > ul li a.sign-up {
+  color: #fff;
+  background-color: #585ce9;
+}
+
+.navbar .container .login > ul li a.sign-up:hover {
+  color: #585ce9;
+  background-color: #fff;
+}
+
+.navbar .container .login > ul li a.sign-in {
+  color: #585ce9;
+  background-color: #fff;
+}
+
+.navbar .container .login > ul li a.sign-in:hover {
+  color: #fff;
+  background-color: #585ce9;
+}
+
+.navbar .container .login > ul li span {
+  padding: 0 15px;
+  font-family: "Nunito", sans-serif;
+  color: #585ce9;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar .container .login > ul li .profile-image-top-right {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .container .login > ul li.nav-item-last {
+  position: relative;
+}
+
+.navbar .container .login > ul li.nav-item-last::after {
+  content: attr(data-id);
+  position: absolute;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  right: 0px;
+  top: -8px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list {
+  padding-top: 30px;
+  padding-left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+  right: 0;
+  top: 100%;
+  display: none;
+  width: 300px;
+  height: auto;
+  max-height: 100vh;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list li {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list li .x-close {
+  font-size: 16px;
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  top: 0;
+  color: red;
+  cursor: pointer;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list li h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: #585ce9;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list li h4 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: #585ce9;
+}
+
+.navbar .container .login > ul li.nav-item-last .my-cart-list li h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #3b566e;
+}
+
+
+.navbar .container .menu-icon span {
+  display: block;
+  line-height: 10px;
+  font-weight: 900;
+  color: #3b566e;
+}
+
+.menu-responsive {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  background: #fff;
+  z-index: 999999999;
+}
+
+.menu-responsive .container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-responsive .container ul li {
+  padding: 15px;
+  border-bottom: 1px solid #f5f5f5;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu-responsive .container ul li:hover {
+  background: #f5f5f5;
+}
+
+.menu-responsive .container ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: #3b566e;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.menu-responsive .container ul li i {
+  margin-left: 5px;
+  font-size: 8px;
+  color: #3b566e;
+  padding-right: 25px;
+}
+
+.menu-responsive .container ul .sub-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.menu-responsive .container ul .sub-menu li {
+  margin: 0;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 8px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-responsive .container ul .sub-menu li:hover {
+  background: #f5f5f5;
+}
+
+.menu-responsive .container ul .sub-menu li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #3b566e;
+  font-family: "Nunito", sans-serif;
+}
+
+.menu-responsive .container .login {
+  padding: 0;
+}
+
+.menu-responsive .container .login > ul {
+  background-color: #f5f5f5;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-responsive .container .login > ul li {
+  cursor: pointer;
+}
+
+.menu-responsive .container .login > ul li a {
+  text-transform: capitalize;
+}
+
+.menu-responsive .container .login > ul li a.sign-out {
+  text-decoration: none;
+  padding: 0 15px;
+  font-family: "Nunito", sans-serif;
+  color: red;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-responsive .container .login > ul li a.sign-up {
+  color: #fff;
+  background-color: #585ce9;
+}
+
+.menu-responsive .container .login > ul li a.sign-up:hover {
+  color: #585ce9;
+  background-color: #fff;
+}
+
+.menu-responsive .container .login > ul li a.sign-in {
+  color: #585ce9;
+  background-color: #fff;
+}
+
+.menu-responsive .container .login > ul li a.sign-in:hover {
+  color: #fff;
+  background-color: #585ce9;
+}
+
+.menu-responsive .container .login > ul li span {
+  padding: 0 15px;
+  font-family: "Nunito", sans-serif;
+  color: #585ce9;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-responsive .container .login > ul li .profile-image-top-right {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-responsive .container .login > ul li.nav-item-last {
+  position: relative;
+}
+
+.menu-responsive .container .login > ul li.nav-item-last .my-cart-list {
+  display: none;
+}
+
+.menu-responsive .container .login > ul li.nav-item-last .basket-icon {
+  font-size: 20px;
+  padding: 0;
+}
+
+.active-scroll {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#loading-effect {
+  background-color: #585ce9;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 99999999999999999999;
+  display: none;
+}
+
+#loading-effect span {
+  width: 100px;
+  height: 100px;
+  background-color: #f5f5f5;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 5px;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  .menu-responsive {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

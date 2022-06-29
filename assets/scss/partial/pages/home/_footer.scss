@@ -1,0 +1,124 @@
+footer {
+	background-color: $main-bg-color-dark;
+	.container {
+		.row {
+			padding-top: 50px;
+			.left-side-logo {
+				padding-left: 20px;
+				color: $main-bg-color-light;
+			}
+			.helpful-links {
+				h4 {
+					color: $main-bg-color-light;
+					@include primary-font( );
+				}
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					li {
+                        position: relative;
+						a {
+                            transition: .5s all;
+                            padding-left: 15px;
+							line-height: 30px;
+							text-decoration: none;
+							color: $main-bg-color-light;
+							@include primary-font( $font-size: 14px);
+						}
+                        &::after{
+                            content: ">";
+                            color: $main-bg-color-light;
+                           @include primary-font($font-size:14px,$font-weight:600);
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                        &:hover{
+                            a{
+                                padding-left: 25px;
+                            }
+                        }
+					}
+				}
+			}
+			.support {
+				h4 {
+					color: $main-bg-color-light;
+					@include primary-font();
+				}
+
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					li {
+                        position: relative;
+						a {
+                            transition: .5s all;
+                            padding-left: 15px;
+							line-height: 30px;
+							text-decoration: none;
+							color: $main-bg-color-light;
+							@include primary-font( $font-size: 14px);
+						}
+                        &::after{
+                            content: ">";
+                            color: $main-bg-color-light;
+                           @include primary-font($font-size:14px,$font-weight:600);
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                        &:hover{
+                            a{
+                                padding-left: 25px;
+                            }
+                        }
+					}
+				}
+			}
+			.contact-us {
+				h4 {
+					color: $main-bg-color-light;
+					@include primary-font();
+				}
+				p {
+					line-height: 30px;
+					margin: 0;
+					color: $main-bg-color-light;
+				}
+				span {
+					color: $main-bg-color-light;
+
+					a {
+						color: $main-bg-color-light;
+
+						@include primary-font( $font-size: 14px);
+					}
+				}
+			}
+			.social-icons {
+				padding-top: 10px;
+				a {
+					text-decoration: none;
+					i {
+						color: $main-bg-color-light;
+						&:hover {
+							color: rgba(201, 216, 236, 0.164);
+						}
+					}
+				}
+			}
+			.footer-copyright {
+				@include primary-font( $font-size: 14px);
+				color: $main-bg-color-light;
+				margin-top: 30px;
+				padding: 20px 0;
+				border-top: 1px solid rgba(197, 197, 197, 0.356);
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@mixin primary-font( $font-size: 16px, $font-weight: 400,$l-spacing:1px) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+	letter-spacing: $l-spacing;
+}
+@mixin primary-flex($j-content:space-between,$a-item:center) {
+	display: flex;
+	justify-content: $j-content;
+	align-items: $a-item;
+}

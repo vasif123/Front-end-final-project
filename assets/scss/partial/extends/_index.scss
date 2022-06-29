@@ -1,0 +1,24 @@
+%primary-btn {
+  text-decoration: none;
+  border: 1px solid #585ce9;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 35px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #585ce9;
+  &:hover {
+    background-color: #3138ff;
+  }
+}
+
+%primary-input-text{
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  box-shadow: $main-box-shadow;
+  border: 1px solid $main-color-light;
+  border-radius: 5px;
+}
