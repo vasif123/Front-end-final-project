@@ -45,26 +45,3 @@ function scrollToElement(clickElement, scrolToElement) {
         $(window).scrollTop($(scrolToElement).offset().top - 50);
     })
 }
-
-//for redirect social pages
-$("[class*='fa-facebook']").click(function (e) {
-    e.preventDefault();
-    window.open('https://www.facebook.com/heydarovnamiq/', '_blank');
-})
-$("[class*='fa-twitter']").click(function (e) {
-    e.preventDefault();
-    window.open("https://twitter.com/heydarov_namik", '_blank');
-})
-$("[class*='fa-linkedin']").click(function (e) {
-    e.preventDefault();
-    window.open("https://www.linkedin.com/in/namik-heydarov-887157221/", '_blank');
-})
-$("[class*='fa-google']").click(function (e) {
-    e.preventDefault();
-    window.open("https://myaccount.google.com/", '_blank');
-})
-$("[class*='fa-github']").click(function (e) {
-    e.preventDefault();
-    window.open("https://github.com/namikah", '_blank');
-})
-
